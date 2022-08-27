@@ -4,37 +4,43 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(10, 10, 10);
+}
+
 body, input, textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 header {
     padding: 16px 0;
-    background-color: navy;
-    color:rgb(220, 220, 220);
+    background-color: rgb(28, 28, 28);
+    color: gold;
 }
 
 header h1,
 section h2 {
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 header,
 section h2,
 section h3 {
-    font-family: 'Bungee', cursive;
-    font-weight: normal;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: bolder;
+
+
 }
 
 
 header nav li {
     display:inline;
     margin-left: 16px ;
-    color: white;
+    color: gold;
     font-size:24px;
 }
 
 header nav li a {
-    color: white;
+    color: goldenrod;
     text-decoration: none;
     font-size: 18px;
 }
@@ -63,15 +69,16 @@ section .container {
 
 section .container {
     align-items: flex-start;
+    margin-left:16px;
 }
 
-section .container > img{
-    width: 400px;
+section .container div > img{
+    width: 700px;
 }
 
 section {
     padding: 24px 0;
-    color: navy;
+    color: goldenrod;
 }
 
 section h2 {
@@ -82,30 +89,31 @@ section p {
     margin-bottom: 8px;
 }
 
-.store-front {
+.bonfire {
     margin-right: 32px;
 }
 
-.social-list img {
-    height: 24px;
-}
 
-.social-list li {
-    display: inline;
-    margin-right: 8px;
+
+.listas li{
+    margin-left: 16px;
 }
 
 .social-list li a{
     text-decoration: none;
 }
 
-#contact .container {
+#sobre .container {
     display: block;
 }
 
-.contact-methods {
+.classes {
     display: flex;
     justify-content: space-between;
+}
+
+.caixas {
+    width: 30%;
 }
 
 form input,
@@ -126,15 +134,15 @@ section h3 {
 }
 
 form button {
-    background-color: navy;
-    color: white;
-    font-family: 'Bungee', cursive;
+    background-color: rgb(10, 10, 10);
+    color: goldenrod;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
     border: none;
     cursor:pointer;
 }
 
 form button:hover {
-    background-color: rgb(83, 83, 197) ;
+    background-color: rgb(70, 70, 70) ;
 }
 
 input:focus, textarea:focus {
@@ -142,7 +150,12 @@ input:focus, textarea:focus {
 }
 
 footer {
-    background-color: rgb(0, 0, 43);
-    color:rgb(220, 220, 220);
+    background-color: rgb(28, 28, 28);
+    color: goldenrod;
     padding: 16px 0;
+    margin-left:16px;
+    
+}
+hr{
+    border-color:rgb(28, 28, 28)
 }
