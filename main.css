@@ -31,7 +31,6 @@ section h3 {
 
 }
 
-
 header nav li {
     display:inline;
     margin-left: 16px ;
@@ -58,15 +57,6 @@ section .container {
     justify-content: space-between;
 }
 
-.brands-list img {
-    height: 24px;
-}
-
-.brands-list li {
-    display: inline;
-    margin-right: 8px;
-}
-
 section .container {
     align-items: flex-start;
     margin-left:16px;
@@ -86,7 +76,7 @@ section h2 {
 }
 
 section p {
-    margin-bottom: 8px;
+    margin-right: 16px;
 }
 
 .bonfire {
