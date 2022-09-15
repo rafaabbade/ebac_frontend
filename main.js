@@ -23,9 +23,8 @@ $(document).ready(function(){
 
     //traçar uma linha sobre o item de uma lista
     //usando um id na ul e organizando dessa forma para alterar apenas um li
-    $('#clickable').on('click', 'li', function() {
-        $(this).toggleClass('cortar')
+    $('ul').on('click', 'li', function() {
+        $(this).addClass('cortar')
     });
-
 })
 
