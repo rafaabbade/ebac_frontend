@@ -4,95 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de games</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Formulário - Máscara de Texto</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1> Games Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about"> Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class ="store-front" src="./images/loja.jpeg" alt="fachada da loja">
-            <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae exercitationem, incidunt numquam iste facilis fugiat harum doloribus. Rerum enim placeat libero recusandae! Ab tempore nulla inventore itaque, illo velit!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae exercitationem, incidunt numquam iste facilis fugiat harum doloribus. Rerum enim placeat libero recusandae! Ab tempore nulla inventore itaque, illo velit!
-                </p>
-                <ul class="brands-list">
-                    <li><img src="./images/Nintendo.png" alt="Nintendo"></li>
-                    <li><img src="./images/Playstation_logo_colour.png" alt="Playstation"></li>
-                    <li><img src="./images/Xbox_one_logo.png" alt="Xbox"></li>
-                </ul>
-            </div>
+    <section>
+        <div>
+            <h2>Formulário</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id='tel' name="tel">
+                </div>
+                <div class="form-campo">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="endereço">Endereço:</label>
+                    <input type="text" id="endereço">
+                </div>
+                <div class="form-campo">
+                    <label for="CEP">CEP;</label>
+                    <input type="text" id="cep">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required/>
-                        <input type="email" placeholder="Seu email" required/>
-                        <input type="tel" placeholder="Seu telefone (opcional"/>
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-list">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./images/instagram.jpeg" alt="Logo do instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./images/facebook.png" alt="logo do facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no Youtube">
-                                <img src="./images/youtube.png" alt="logo do youtube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Javascript, n123, Vila HTML - São Paulo - SP
-                    </p>
-                </div>
-            </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script>
+            $('#tel').mask('(00) 00000-0000');
 
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; Games Shop - Todos os direitos reservados - 2022</p>
-        </div>
-    </footer>
+            $('#cpf').mask('000.000.000-00');
+
+            $('#cep').mask('00000-000');
+
+            $('form').validate ({
+                rules: {
+                    nome: {
+                        required:true
+                    },
+                    email: {
+                        required:true
+                    },
+                    tel: {
+                        required:true
+                    },
+                },
+                messages: {
+                    nome: 'Preencha seu nome',
+                    email: 'Preencha seu email',
+                    tel: 'Preencha seu telefone'
+                }
+            })
+    </script>
 </body>
 </html>
