@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<style>
+    input {
+        margin-bottom: 8px;
+    }
+    .col-md-6 {
+        padding: 8px;
+    }
+    body {
+        padding:24px;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="accordion">           
+                <div class="row">
+                    <h1>Escolha entre os formulários 1 e 2</h1>
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle= "collapse" data-bs-target="#resposta1">
+                                    Preencha o formulário 1
+                                </button>
+                            </div>
+                            <div id="resposta1" class="accordion-collapse collapse show ">
+                                <div class="accordion-body">
+                                    <h3>Formulário 1</h3>
+                                    <form>
+                                        <label class="form-label" for="nome">Nome:</label>
+                                        <input class="form-control" type="text" name="nome" id="nome"> 
+                                        <label class="form-label" for="email">E-mail:</label>          
+                                        <input class="form-control" type="email" name="email" id="email">
+                                        <label class="form-label" for="tel">Telefone:</label>            
+                                        <input class="form-control" type="tel" name="tel" id="tel">            
+                                        <button class="btn btn-success">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                                    Preencha o formulário 2
+                                </button>
+                            </div>
+                            <div id="resposta2" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <h3>Formulário 2</h3>
+                                    <form>
+                                        <label class="form-label" for="nome">Nome:</label>
+                                        <input class="form-control" type="text" name="nome" id="nome"> 
+                                        <label class="form-label" for="email">E-mail:</label>          
+                                        <input class="form-control" type="email" name="email" id="email">
+                                        <label class="form-label" for="tel">Telefone:</label>            
+                                        <input class="form-control" type="tel" name="tel" id="tel">            
+                                        <button class="btn btn-success">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>            
+            
+        </div>
+    </div>
+</body>
+</html>
